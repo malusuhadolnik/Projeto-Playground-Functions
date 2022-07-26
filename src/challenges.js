@@ -23,10 +23,13 @@ function calcArea(base, height) {
 }
 //console.log(calcArea(5,2));
 
-// Desafio 3
-function splitSentence() {
-  // seu código aqui
+// Desafio 3 //Referência bibliográfica: https://www.w3schools.com/jsref/jsref_split.asp
+function splitSentence(frase) {
+  let fraseDividida = frase.split(" ");
+  return fraseDividida;
 }
+//console.log(splitSentence("O essencial é invisível aos olhos"));
+
 
 // Desafio 4
 function concatName() {
