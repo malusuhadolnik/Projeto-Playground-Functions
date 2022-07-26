@@ -48,14 +48,14 @@ function footballPoints(wins, ties) {
 // Desafio 6
 function highestCount(arrayDeNumeros) {
   let maiorNumeroEh = arrayDeNumeros[0];
-  for ( let index in arrayDeNumeros){
-    if ( maiorNumeroEh < arrayDeNumeros[index]){
+  for (let index in arrayDeNumeros) {
+    if (maiorNumeroEh < arrayDeNumeros[index]) {
       maiorNumeroEh = arrayDeNumeros[index];
     }
   }
   let repeticoes = 0;
-   for ( let indice in arrayDeNumeros) {
-    if ( arrayDeNumeros[indice] === maiorNumeroEh){
+  for (let indice in arrayDeNumeros) {
+   if (arrayDeNumeros[indice] === maiorNumeroEh) {
       repeticoes += 1;
      }
   }
@@ -67,20 +67,35 @@ function highestCount(arrayDeNumeros) {
 function catAndMouse(mouse, cat1, cat2) {
   let distCat1 = Math.abs(cat1 - mouse);
   let distCat2 = Math.abs(cat2 - mouse);
-  if(distCat1 < distCat2){
-    return "cat1";
-  } else if (distCat1 > distCat2){
-    return "cat2";
+  if (distCat1 < distCat2) {
+    return 'cat1';
+  } else if (distCat1 > distCat2) {
+    return 'cat2';
   } else {
-    return "os gatos trombam e o rato foge";
+    return 'os gatos trombam e o rato foge';
   }
 }
 console.log(catAndMouse(1, 0, 2));
 
 // Desafio 8
-function fizzBuzz() {
-  // seu código aqui
+function fizzBuzz(numberArray) {
+  let fizzBuzzString = [];
+  for (let index in numberArray){
+    if (numberArray[index] % 15 === 0 && numberArray[index] % 5 === 0){
+      fizzBuzzString.push("fizzBuzz");
+    } else if (numberArray[index] % 3 === 0){
+      fizzBuzzString.push("fizz");
+    } else if (numberArray[index] % 5 === 0){
+      fizzBuzzString.push("buzz");
+    } else {
+      fizzBuzzString.push("bug!");
+    }
+  }
+return fizzBuzzString;
 }
+ console.log(fizzBuzz([9, 25])); // fizz, buzz
+ console.log(fizzBuzz([2, 15, 7, 9, 45])); // bug!', 'fizzBuzz', 'bug!', 'fizz', 'fizzBuzz'
+ console.log(fizzBuzz([7, 9]));// 'bug!', 'fizz'
 
 // Desafio 9
 function encode() {
