@@ -63,12 +63,21 @@ function highestCount(arrayDeNumeros) {
    }
    return repeticoes;
 }
-//console.log(highestCount([11, 11, 11, 11, 8, 9, 9, 1]));
+// console.log(highestCount([11, 11, 11, 11, 8, 9, 9, 1]));
 
-// Desafio 7
-function catAndMouse() {
-  // seu código aqui
+// Desafio 7 //Referências bibliográficas: https://www.w3schools.com/jsref/jsref_abs.asp
+function catAndMouse(mouse, cat1, cat2) {
+  let distCat1 = Math.abs(cat1 - mouse);
+  let distCat2 = Math.abs(cat2 - mouse);
+  if(distCat1 < distCat2){
+    return "cat1";
+  } else if (distCat1 > distCat2){
+    return "cat2";
+  } else {
+    return "os gatos trombam e o rato foge";
+  }
 }
+console.log(catAndMouse(1, 0, 2));
 
 // Desafio 8
 function fizzBuzz() {
