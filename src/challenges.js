@@ -41,9 +41,11 @@ function concatName(arrayDeStrings) {
 //console.log(concatName(["Max", "Eleven", "Steve", "Robin", "Eddie", "Nancy"]));
 
 // Desafio 5
-function footballPoints() {
-  // seu código aqui
+function footballPoints(wins, ties) {
+  let totalpoints = (wins *3) + ties;
+  return totalpoints;
 }
+//console.log(footballPoints(0,0));
 
 // Desafio 6
 function highestCount() {
