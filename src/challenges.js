@@ -1,7 +1,20 @@
+//const ciano = true;
+//const yellow = true;
+//const magenta = true;
+//const green = false;
+//const purple = false;
+
+
 // Desafio 1
-function compareTrue() {
-  // seu código aqui
+function compareTrue(cor1, cor2) {
+  if (cor1 === true && cor2 === true){
+    return true;
+  } else {
+    return false;
+  }
 }
+
+//console.log(compareTrue(purple, green));
 
 // Desafio 2
 function calcArea() {
