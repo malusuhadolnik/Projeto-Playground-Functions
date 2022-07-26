@@ -17,24 +17,23 @@ function compareTrue(cor1, cor2) {
 
 // Desafio 2
 function calcArea(base, height) {
-  let area = (base * height) / 2; 
+  let area = (base * height) / 2;
   return area;
 }
 // console.log(calcArea(5,2));
 
 // Desafio 3 //Referência bibliográfica: https://www.w3schools.com/jsref/jsref_split.asp
 function splitSentence(frase) {
-  let fraseDividida = frase.split(" ");
+  let fraseDividida = frase.split(' ');
   return fraseDividida;
 }
 // console.log(splitSentence("O essencial é invisível aos olhos"));
 
-
 // Desafio 4
 function concatName(arrayDeStrings) {
   let primeiroNome = arrayDeStrings[0];
-  let ultimoNome = arrayDeStrings[arrayDeStrings.length -1]; 
-  let concat =  ultimoNome + ", " + primeiroNome;
+  let ultimoNome = arrayDeStrings[arrayDeStrings.length - 1];
+  let concat = ultimoNome + ', ' + primeiroNome;
   return concat;
 }
 // console.log(concatName(["Max", "Eleven", "Steve", "Robin", "Eddie", "Nancy"]));
@@ -49,19 +48,18 @@ function footballPoints(wins, ties) {
 // Desafio 6
 function highestCount(arrayDeNumeros) {
   let maiorNumeroEh = arrayDeNumeros[0];
-  for(let index in arrayDeNumeros){
-    if (maiorNumeroEh < arrayDeNumeros[index]){
+  for ( let index in arrayDeNumeros){
+    if ( maiorNumeroEh < arrayDeNumeros[index]){
       maiorNumeroEh = arrayDeNumeros[index];
     }
   }
-
   let repeticoes = 0;
-   for (let indice in arrayDeNumeros) {
-     if(arrayDeNumeros[indice] === maiorNumeroEh){
-       repeticoes += 1;
+   for ( let indice in arrayDeNumeros) {
+    if ( arrayDeNumeros[indice] === maiorNumeroEh){
+      repeticoes += 1;
      }
-   }
-   return repeticoes;
+  }
+  return repeticoes;
 }
 // console.log(highestCount([11, 11, 11, 11, 8, 9, 9, 1]));
 
