@@ -17,9 +17,11 @@ function compareTrue(cor1, cor2) {
 //console.log(compareTrue(purple, green));
 
 // Desafio 2
-function calcArea() {
-  // seu código aqui
+function calcArea(base, height) {
+  let area = (base * height)/2; 
+  return area;
 }
+//console.log(calcArea(5,2));
 
 // Desafio 3
 function splitSentence() {
