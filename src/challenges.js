@@ -32,9 +32,13 @@ function splitSentence(frase) {
 
 
 // Desafio 4
-function concatName() {
-  // seu código aqui
+function concatName(arrayDeStrings) {
+  let primeiroNome = arrayDeStrings[0];
+  let ultimoNome = arrayDeStrings[arrayDeStrings.length -1]; 
+  let concat =  ultimoNome + ", " + primeiroNome;
+  return concat;
 }
+//console.log(concatName(["Max", "Eleven", "Steve", "Robin", "Eddie", "Nancy"]));
 
 // Desafio 5
 function footballPoints() {
