@@ -98,12 +98,52 @@ return fizzBuzzString;
  console.log(fizzBuzz([7, 9]));// 'bug!', 'fizz'
 
 // Desafio 9
-function encode() {
-  // seu código aqui
+function encode(frase) {
+  let fraseCodificada = '';
+  for(let index in frase) {
+    if(frase[index] === 'a'){
+      fraseCodificada += '1';
+    } else if (frase[index] === 'e') {
+      fraseCodificada += '2';
+    } else if (frase[index] === 'i') {
+      fraseCodificada += '3';
+    } else if (frase[index] === 'o') {
+      fraseCodificada += '4';   
+    } else if (frase[index] === 'u') {
+      fraseCodificada += '5';
+    } else {
+      fraseCodificada += frase[index];
+    }
+  }
+  return fraseCodificada;
 }
-function decode() {
-  // seu código aqui
+//console.log(encode('hello')); //h2ll4
+//console.log(encode('How are you today?')); //H4w 1r2 y45 t4d1y?
+//console.log(encode('This is an encoding test.')); //Th3s 3s 1n 2nc4d3ng t2st.
+//console.log(encode('go Trybe!')); //g4 Tryb2!
+//console.log(encode('aeiou')); //g4 Tryb2!
+
+
+function decode(coded) {
+  let fraseDecodificada = '';
+  for(let index in coded) {
+    if(coded[index] === '1'){
+      fraseDecodificada += 'a';
+    } else if (coded[index] === '2') {
+      fraseDecodificada += 'e';
+    } else if (coded[index] === '3') {
+      fraseDecodificada += 'i';
+    } else if (coded[index] === '4') {
+      fraseDecodificada += 'o';   
+    } else if (coded[index] === '5') {
+      fraseDecodificada += 'u';
+    } else {
+      fraseDecodificada += coded[index];
+    }
+  }
+  return fraseDecodificada;
 }
+//console.log(decode('Th3s 3s 1n 2nc4d3ng t2st'));
 
 // Desafio 10
 function techList() {
