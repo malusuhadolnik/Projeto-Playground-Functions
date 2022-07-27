@@ -55,9 +55,9 @@ function highestCount(arrayDeNumeros) {
   }
   let repeticoes = 0;
   for (let indice in arrayDeNumeros) {
-   if (arrayDeNumeros[indice] === maiorNumeroEh) {
+    if (arrayDeNumeros[indice] === maiorNumeroEh) {
       repeticoes += 1;
-     }
+    }
   }
   return repeticoes;
 }
@@ -80,28 +80,28 @@ console.log(catAndMouse(1, 0, 2));
 // Desafio 8
 function fizzBuzz(numberArray) {
   let fizzBuzzString = [];
-  for (let index in numberArray){
-    if (numberArray[index] % 15 === 0 && numberArray[index] % 5 === 0){
-      fizzBuzzString.push("fizzBuzz");
-    } else if (numberArray[index] % 3 === 0){
-      fizzBuzzString.push("fizz");
-    } else if (numberArray[index] % 5 === 0){
-      fizzBuzzString.push("buzz");
+  for (let index in numberArray) {
+    if (numberArray[index] % 15 === 0 && numberArray[index] % 5 === 0) {
+      fizzBuzzString.push('fizzBuzz');
+    } else if (numberArray[index] % 3 === 0) {
+      fizzBuzzString.push('fizz');
+    } else if (numberArray[index] % 5 === 0) {
+      fizzBuzzString.push('buzz');
     } else {
-      fizzBuzzString.push("bug!");
+      fizzBuzzString.push('bug!');
     }
   }
-return fizzBuzzString;
+  return fizzBuzzString;
 }
- console.log(fizzBuzz([9, 25])); // fizz, buzz
- console.log(fizzBuzz([2, 15, 7, 9, 45])); // bug!', 'fizzBuzz', 'bug!', 'fizz', 'fizzBuzz'
- console.log(fizzBuzz([7, 9]));// 'bug!', 'fizz'
+// console.log(fizzBuzz([9, 25])); // fizz, buzz
+// console.log(fizzBuzz([2, 15, 7, 9, 45])); // bug!', 'fizzBuzz', 'bug!', 'fizz', 'fizzBuzz'
+// console.log(fizzBuzz([7, 9]));// 'bug!', 'fizz'
 
 // Desafio 9
 function encode(frase) {
   let fraseCodificada = '';
-  for(let index in frase) {
-    if(frase[index] === 'a'){
+  for (let index in frase) {
+    if (frase[index] === 'a') {
       fraseCodificada += '1';
     } else if (frase[index] === 'e') {
       fraseCodificada += '2';
@@ -117,24 +117,23 @@ function encode(frase) {
   }
   return fraseCodificada;
 }
-//console.log(encode('hello')); //h2ll4
-//console.log(encode('How are you today?')); //H4w 1r2 y45 t4d1y?
-//console.log(encode('This is an encoding test.')); //Th3s 3s 1n 2nc4d3ng t2st.
-//console.log(encode('go Trybe!')); //g4 Tryb2!
-//console.log(encode('aeiou')); //g4 Tryb2!
-
+// console.log(encode('hello')); //h2ll4
+// console.log(encode('How are you today?')); //H4w 1r2 y45 t4d1y?
+// console.log(encode('This is an encoding test.')); //Th3s 3s 1n 2nc4d3ng t2st.
+// console.log(encode('go Trybe!')); //g4 Tryb2!
+// console.log(encode('aeiou')); //g4 Tryb2!
 
 function decode(coded) {
   let fraseDecodificada = '';
-  for(let index in coded) {
-    if(coded[index] === '1'){
+  for (let index in coded) {
+    if(coded[index] === '1') {
       fraseDecodificada += 'a';
     } else if (coded[index] === '2') {
       fraseDecodificada += 'e';
     } else if (coded[index] === '3') {
       fraseDecodificada += 'i';
     } else if (coded[index] === '4') {
-      fraseDecodificada += 'o';   
+      fraseDecodificada += 'o';
     } else if (coded[index] === '5') {
       fraseDecodificada += 'u';
     } else {
@@ -143,10 +142,10 @@ function decode(coded) {
   }
   return fraseDecodificada;
 }
-//console.log(decode('Th3s 3s 1n 2nc4d3ng t2st'));
+// console.log(decode('Th3s 3s 1n 2nc4d3ng t2st'));
 
 // Desafio 10
-function techList() {
+function techList(arrayTech, name) {
   // seu código aqui
 }
 
