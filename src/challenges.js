@@ -146,8 +146,25 @@ function decode(coded) {
 
 // Desafio 10
 function techList(arrayTech, name) {
-  // seu código aqui
+  let listaAlfabetica = arrayTech.sort();
+  if (listaAlfabetica.length === 0){
+    return 'Vazio!';
+  } else {
+     let arrayDeTechEUmNome = [];
+     for (let index in listaAlfabetica){
+     arrayDeTechEUmNome.push({tech: listaAlfabetica[index], name: name,});
+    }
+    return arrayDeTechEUmNome;
+  }
 }
+ //console.log(techList([], 'Lucas'));
+ //console.log(techList(['React', 'Jest', 'HTML', 'CSS', 'JavaScript'], 'Lucas'));
+
+//arrayTeste = ['React', 'Jest', 'HTML', 'CSS', 'JavaScript'];
+//let alfabetico = arrayTeste.sort();
+//console.log(alfabetico);
+
+
 
 module.exports = {
   calcArea,
