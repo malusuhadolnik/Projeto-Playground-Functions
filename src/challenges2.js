@@ -19,12 +19,32 @@ function triangleCheck(lineA, lineB, lineC) {
   //console.log(triangleCheck(23,10,10))
 
 // Desafio 13
-function hydrate() {
-  // seu código aqui
+function hydrate(stringDeBebidas) {
+  let arrayDeCopos = stringDeBebidas.match(/\d+/g);
+  
+  conversaoEmNumeros = arrayDeCopos.map(str => {
+    return Number(str);
+  });
+
+  var numeroCopos = conversaoEmNumeros.reduce(function(a, b){
+    return a + b;
+   }, 0);
+
+  if (numeroCopos === 1) {
+      return "1 copo de água"
+  } else if (numeroCopos > 1) {
+      return numeroCopos + " copos de água"
+  }
 }
+
+//console.log(hydrate('3 cachaças, 9 cervejas e 1 gintonica'));
+
+
 
 module.exports = {
   generatePhoneNumber,
   hydrate,
   triangleCheck,
 };
+
+
