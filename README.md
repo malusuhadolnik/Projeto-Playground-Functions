@@ -1,13 +1,10 @@
-# :construction: README customizado em construção ! :construction:
-<!-- Olá, Tryber!
-Esse é apenas um arquivo inicial para o README do seu projeto no qual você pode customizar e reutilizar todas as vezes que for executar o trybe-publisher.
+# Projeto Playground Functions
 
-Para deixá-lo com a sua cara, basta alterar o seguinte arquivo da sua máquina: ~/.student-repo-publisher/custom/_NEW_README.md
 
-É essencial que você preencha esse documento por conta própria, ok?
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
-:warning: IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
--->
+# Sobre
+Este projeto foi desenvolvido durante o Módulo 1 - Fundamentos do curso de Desenvolvimento Web da Trybe. 
+Nele, Javascript vanilla foi utilizado para a implementação de funções que resolvem problemas com respostas pré-determinadas. 
+Os problemas propostos, apesar de elementares, envolvem a aplicação de lógica de programação desenvolvida ao longo de todo o percurso de aprendizado.
+
+Arquivos desenvolvidos por mim: challenges.js e challenges2.js
+Os demis foram desenvolvidos pelo time da Trybe
